@@ -40,6 +40,9 @@ type PodNetwork struct {
 	// Networks is a list of CNI network names to attach to the sandbox
 	// Leave this list empty to attach the default network to the sandbox
 	Networks []string
+
+	// Runtime is the OCI runtime name of the sandbox.
+	Runtime string
 }
 
 // CNIPlugin is the interface that needs to be implemented by a plugin

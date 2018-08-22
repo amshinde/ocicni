@@ -539,6 +539,7 @@ func buildCNIRuntimeConf(cacheDir string, podNetwork *PodNetwork, ifName string)
 			{"K8S_POD_NAMESPACE", podNetwork.Namespace},
 			{"K8S_POD_NAME", podNetwork.Name},
 			{"K8S_POD_INFRA_CONTAINER_ID", podNetwork.ID},
+			{"K8S_POD_OCI_RUNTIME", podNetwork.Runtime},
 		},
 	}
 
